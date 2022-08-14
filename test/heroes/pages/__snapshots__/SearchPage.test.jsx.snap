@@ -18,6 +18,7 @@ exports[`pruebas en SearchPage debe de mostrar correctamente con valores por def
       <hr />
       <form
         action=""
+        aria-label="form"
       >
         <input
           autocomplete="off"
@@ -48,6 +49,7 @@ exports[`pruebas en SearchPage debe de mostrar correctamente con valores por def
         Search a hero
       </div>
       <div
+        aria-label="alert-display"
         class="alert alert-danger animate__animated animate__fadeIn"
         style="display: none;"
       >

@@ -36,7 +36,7 @@ export const SearchPage = () => {
           <div className="col-5">
             <h4>Searching</h4>
             <hr />
-            <form onSubmit={onSearchSubmit} action="">
+            <form onSubmit={onSearchSubmit} action="" aria-label="form">
               <input 
                 type="text"
                 placeholder="Search a hero"
@@ -44,7 +44,7 @@ export const SearchPage = () => {
                 name="searchText"
                 autoComplete="off"
                 value={ searchText }
-                onChange={ onInputChange }
+                onChange={ onInputChange }                
                 />
             </form>
 
@@ -69,7 +69,11 @@ export const SearchPage = () => {
               Search a hero
             </div>
 
-            <div className="alert alert-danger animate__animated animate__fadeIn" style={{ display: showError ? '' : 'none'}} >
+            <div 
+              className="alert alert-danger animate__animated animate__fadeIn" 
+              style={{ display: showError ? '' : 'none'}} 
+              aria-label="alert-display"  
+            >
               No hero with <b>{ q }</b>
             </div>
             {
